@@ -1,0 +1,24 @@
+.cell {
+  height: 0.5rem;
+  min-width: 0.5rem;
+  display: table-cell;
+  border: 0.5px solid black;
+  contain: strict;
+  transition: background-color 0.075s;
+
+  &.alive {
+    background: white;
+  }
+
+  &.dead {
+    background: #1d2024;
+
+    &:hover {
+      background: #4e565e;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}

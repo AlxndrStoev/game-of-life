@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~ngx-toastr/toastr";
+
+html,
+body {
+  height: 100%;
+  min-width: fit-content;
+}
+body {
+  display: block;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+#toast-container > div {
+  width: 25rem;
+  border: none;
+  text-align: center;
+  border-radius: 10px;
+  letter-spacing: 0.8px;
+  font-size: 1rem;
+}

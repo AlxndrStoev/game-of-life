@@ -1,0 +1,12 @@
+<ng-container *ngFor="let col of grid; index as indexCol; trackBy: trackBy">
+  <div>
+    <ng-container *ngFor="let cell of col; index as indexRow; trackBy: trackBy">
+      <div
+        [class]="cell === 1 ? 'cell alive' : 'cell dead'"
+        (click)="onClick($event)"
+        [attr.data-row]="indexRow"
+        [attr.data-col]="indexCol"
+      ></div>
+    </ng-container>
+  </div>
+</ng-container>
